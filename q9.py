@@ -52,13 +52,6 @@ def find_diagonals(a_node: Node, k) -> Optional[Node]:
             return c
     return None
 
-def count_distinct(a_node: Node) -> Set[frozenset]:
-    master_set = set()
-    master_set.add(a_node.trees)
-    for child in a_node.children:
-        master_set |= count_distinct(child)
-    return master_set
-
 
 if __name__ == "__main__":
     q = Node()
