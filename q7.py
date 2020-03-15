@@ -27,4 +27,6 @@ if __name__ == "__main__":
     for i in range(6, 0, -1):
         temp = get_numbers(i)
         plt.scatter([float(k) for k in temp], [i for _ in temp], marker=",", c=m[i - 1])
+    plt.xlabel("Value")
+    plt.ylabel("Iteration")
     plt.show()
